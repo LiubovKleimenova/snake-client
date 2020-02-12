@@ -18,6 +18,16 @@ const connect = function() {
   conn.on("connect", () => {
     conn.write("Name: LKS");
   });
+
+  conn.on("connect", () => {
+    //conn.write("Move: up");
+  });
+
+  //setTimeout(() => {conn.on("connect", () => {
+  //  conn.write("Move: right");
+  //})}, 3000)
+
+  
   return conn;
 };
 
